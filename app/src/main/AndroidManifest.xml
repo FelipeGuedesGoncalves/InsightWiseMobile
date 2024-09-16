@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/insightwiseicon"
+        android:roundIcon="@drawable/insightwiseiconround"
+        android:label="InsightWise"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <!-- Tema AppCompat para LoginActivity -->
+        <activity
+            android:name=".view.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- CadastroActivity com o mesmo tema -->
+        <activity
+            android:name=".view.CadastroActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+        <!-- MainActivity com tema Light -->
+        <activity
+            android:name=".view.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+    </application>
+</manifest>
+

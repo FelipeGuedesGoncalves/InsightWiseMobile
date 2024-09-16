@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="plan_options">
+        <item>Plano Básico</item>
+        <item>Plano Comum</item>
+        <item>Plano Premium</item>
+    </string-array>
+
+    <string-array name="payment_options">
+        <item>Boleto</item>
+        <item>Cartão de Crédito</item>
+        <item>Cartão de Débito</item>
+    </string-array>
+</resources>

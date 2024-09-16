@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/background_gradient">
+
+        <ImageButton
+            android:id="@+id/dashboardButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/dashboardicon"
+            android:padding="10dp"
+            style="@style/ButtonStyle"
+            android:background="@null"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/relatorioButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/papericon"
+            android:padding="10dp"
+            style="@style/ButtonStyle"
+            android:background="@null"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/heatmapButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/analiseindividualicon"
+            android:padding="10dp"
+            style="@style/ButtonStyle"
+            android:background="@null"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/tutorialButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tutorialicon"
+            android:padding="10dp"
+            style="@style/ButtonStyle"
+            android:background="@null"
+            android:scaleType="fitCenter"/>
+
+
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profileicon"
+            android:padding="10dp"
+            style="@style/ButtonStyle"
+            android:background="@null"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragment_container"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

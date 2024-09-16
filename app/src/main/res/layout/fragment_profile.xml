@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".view.ProfileFragment"
+    android:background="@drawable/background_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TituloFragments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/creme"
+                android:padding="16dp"
+                android:text="Perfil da empresa"/>
+
+            <Button
+                android:id="@+id/edit_profile_button"
+                style="@style/ButtonStyle"
+                android:layout_width="120dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Editar Perfil"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/logoutButton"
+                style="@style/ButtonStyle"
+                android:layout_width="120dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Sair"
+                android:textAllCaps="false"/>
+
+            <LinearLayout
+                style="@style/WhiteBlock"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    style="@style/ProfileTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Dados da empresa"/>
+
+                <TextView
+                    style="@style/ProfileLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Nome da empresa"/>
+
+                <EditText
+                    android:id="@+id/username_input"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="-"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/roxo_muito_escuro"
+                    android:enabled="false"/>
+
+                <TextView
+                    style="@style/ProfileLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="CNPJ"/>
+
+                <EditText
+                    android:id="@+id/cnpj_input"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="-"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/roxo_muito_escuro"
+                    android:enabled="false"/>
+
+                <TextView
+                    style="@style/ProfileLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Email"/>
+
+                <EditText
+                    android:id="@+id/email_input"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="-"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/roxo_muito_escuro"
+                    android:enabled="false"/>
+
+                <TextView
+                    style="@style/ProfileLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Senha"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/senha_input"
+                        style="@style/EditTextStyle"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="-"
+                        android:inputType="textEmailAddress"
+                        android:background="@drawable/bottomline"
+                        android:textColor="@color/roxo_muito_escuro"
+                        android:enabled="false"/>
+
+                    <ImageButton
+                        android:id="@+id/showPasswordButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/passworddisabled"
+                        android:padding="10dp"
+                        style="@style/ButtonStyle"
+                        android:background="@null"
+                        android:scaleType="fitCenter"/>
+                </LinearLayout>
+
+
+
+                <TextView
+                    style="@style/ProfileLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Telefone"/>
+
+                <EditText
+                    android:id="@+id/phone_input"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="-"
+                    android:inputType="phone"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/roxo_muito_escuro"
+                    android:enabled="false"/>
+
+                <TextView
+                    style="@style/ProfileLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Plano"/>
+
+                <Spinner
+                    android:id="@+id/plan_input"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/roxo_muito_escuro"
+                    android:enabled="false"/>
+
+                <TextView
+                    style="@style/ProfileLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Forma de Pagamento"/>
+
+                <Spinner
+                    android:id="@+id/payment_input"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/roxo_muito_escuro"
+                    android:enabled="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/WhiteBlock"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    style="@style/ProfileTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Meus Sites"/>
+
+                <TextView
+                    style="@style/ProfileLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Nome do Website"/>
+
+                <EditText
+                    android:id="@+id/sitename_input"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="-"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/roxo_muito_escuro"
+                    android:enabled="false"/>
+
+                <TextView
+                    style="@style/ProfileLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Endereço do Site"/>
+
+                <EditText
+                    android:id="@+id/siteaddress_input"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="-"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/roxo_muito_escuro"
+                    android:enabled="false"/>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/delete_profile_button"
+                style="@style/ButtonDeleteStyle"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="40dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Excluir Perfil"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

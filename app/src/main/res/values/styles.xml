@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Definição de cores -->
+    <color name="roxo_muito_escuro">#650FC8</color>
+    <color name="roxo_escuro">#7913EE</color>
+    <color name="roxo">#9249FF</color>
+    <color name="roxo_claro">#AA7EFF</color>
+    <color name="creme">#fffdea</color>
+    <color name="branco">#ffffff</color>
+
+    <!-- Definição de estilos -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/roxo</item>
+        <item name="colorPrimaryDark">@color/roxo_escuro</item>
+        <item name="colorAccent">@color/creme</item>
+        <item name="android:editTextStyle">@style/EditTextStyle</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@color/branco</item>
+        <item name="android:textColorHint">@color/roxo_muito_escuro</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textColor">@color/creme</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ButtonDeleteStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/buttondelete</item>
+        <item name="android:textColor">@color/creme</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WhiteBlock">
+        <item name="android:background">@drawable/whiteblocks</item>
+    </style>
+
+    <style name="ProfileBox">
+        <item name="android:background">@color/branco</item>
+        <item name="android:radius">20dp</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="ProfileTitle">
+        <item name="android:textColor">@color/roxo_muito_escuro</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ProfileSubtitle">
+        <item name="android:textColor">@color/roxo_muito_escuro</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="ProfileLabel">
+        <item name="android:textColor">@color/roxo_muito_escuro</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="Titulo">
+        <item name="android:textColor">@color/creme</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TituloFragments">
+        <item name="android:textColor">@color/roxo</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="ProfileData">
+        <item name="android:textColor">@color/roxo_muito_escuro</item>
+    </style>
+
+    <style name="WelcomeText">
+        <item name="android:textColor">@color/branco</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

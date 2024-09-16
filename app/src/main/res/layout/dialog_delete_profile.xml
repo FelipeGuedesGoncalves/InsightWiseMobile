@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/background_gradient">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite seu email e senha para confirmar a exclusão do perfil"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/creme"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* Todas as infromações de sua empresa e seus sites serão permanentemente excluídas *"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="8dp"
+        style="@style/Titulo"/>
+
+    <EditText
+        android:id="@+id/email_confirm_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="8dp"
+        style="@style/EditTextStyle"
+        android:textColor="@color/roxo_muito_escuro"/>
+
+    <EditText
+        android:id="@+id/password_confirm_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:layout_marginBottom="8dp"
+        style="@style/EditTextStyle"
+        android:textColor="@color/roxo_muito_escuro"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="8dp"
+            style="@style/Titulo"/>
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmar"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            style="@style/Titulo"/>
+    </LinearLayout>
+</LinearLayout>

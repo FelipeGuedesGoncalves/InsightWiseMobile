@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <!-- Destino para o DashboardFragment -->
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.insightwisemobile.view.DashboardFragment"
+        android:label="Dashboard Fragment">
+    </fragment>
+
+    <!-- Destino para o RelatorioFragment -->
+    <fragment
+        android:id="@+id/relatorioFragment"
+        android:name="com.example.insightwisemobile.view.RelatorioFragment"
+        android:label="Relatorio Fragment">
+    </fragment>
+
+    <!-- Destino para o AnaliseIndividualFragment -->
+
+    <fragment
+        android:id="@+id/analiseindividualFragment"
+        android:name="com.example.insightwisemobile.view.AnaliseIndividualFragment"
+        android:label="Heatmap Fragment">
+    </fragment>
+
+    <!-- Destino para o TutorialFragment -->
+
+    <fragment
+        android:id="@+id/tutorialFragment"
+        android:name="com.example.insightwisemobile.view.TutorialFragment"
+        android:label="Tutorial Fragment">
+    </fragment>
+
+
+
+    <!-- Destino para o ProfileFragment -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.insightwisemobile.view.ProfileFragment"
+        android:label="Profile Fragment">
+    </fragment>
+
+</navigation>

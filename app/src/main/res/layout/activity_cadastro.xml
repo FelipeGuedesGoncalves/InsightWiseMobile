@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".view.CadastroActivity"
+    android:background="@drawable/background_gradient">
+
+    <!-- Recurso de scroll -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <!-- pagina inteira em uma view para funcionar o scroll -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Pagina inteira -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/insightwiselogo"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="90dp"
+                    />
+
+                <Button
+                    android:id="@+id/back_to_login_button"
+                    style="@style/ButtonStyle"
+                    android:text="Voltar"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="20dp"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faça seu Cadastro"
+                style="@style/Titulo"
+                android:textSize="22sp"
+                android:textColor="@color/creme"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="40dp"/>
+
+
+            <!-- Área de cadastro -->
+
+            <LinearLayout
+
+                style="@style/WhiteBlock"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <!-- Informações chave da empresa -->
+
+                <TextView
+                    style="@style/ProfileTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Dados da empresa"/>
+
+                <TextView
+                    style="@style/ProfileSubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="preenha com base nos dados da sua empresa"/>
+
+                <TextView
+                    style="@style/ProfileLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Nome da empresa"/>
+
+                <EditText
+                    android:id="@+id/username_input"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="-"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/roxo_muito_escuro"/>
+
+                <TextView
+                    style="@style/ProfileLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="CNPJ"/>
+
+                <EditText
+                    android:id="@+id/cnpj_input"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="-"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/roxo_muito_escuro"/>
+
+                <TextView
+                    style="@style/ProfileLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="Senha"/>
+
+                <EditText
+                    android:id="@+id/password_input"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="-"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/roxo_muito_escuro"/>
+
+                <!-- Contatos -->
+
+                <TextView
+                    style="@style/ProfileTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="Contatos"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    style="@style/ProfileSubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:gravity="center_vertical"
+                    android:text="Enviaremos boletos, informações úteis e códigos nestes contatos. (o Email cadastrado também será utilizado para login)"/>
+
+                <TextView
+                    style="@style/ProfileLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Email"/>
+
+                <EditText
+                    android:id="@+id/email_input"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="-"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/roxo_muito_escuro"/>
+
+                <TextView
+                    style="@style/ProfileLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="Telefone"/>
+
+
+                <EditText
+                    android:id="@+id/phone_input"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="-"
+                    android:inputType="phone"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/roxo_muito_escuro"/>
+
+                <!-- Escolha do plano -->
+
+                <TextView
+                    style="@style/ProfileTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Escolha do Plano"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    style="@style/ProfileSubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="Escolha o plano e forma de pagamento"/>
+
+                <TextView
+                    style="@style/ProfileLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="Plano"/>
+
+                <Spinner
+                    android:id="@+id/plan_input"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/roxo_muito_escuro"/>
+
+                <TextView
+                    style="@style/ProfileLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="Forma de Pagamento"/>
+
+                <Spinner
+                    android:id="@+id/payment_input"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottomline"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/roxo_muito_escuro"/>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/register_button"
+                style="@style/ButtonStyle"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Finalizar Cadastro"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
