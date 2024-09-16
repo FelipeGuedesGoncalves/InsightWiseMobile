@@ -1,7 +1,16 @@
+![Imagem de Capa](app/src/main/res/drawable/insightwiselogo.png)
+
+---
+## Sumário
+- [Integrantes](#integrantes)
+- [Descrição do Projeto](#descrição-do-projeto)
+- [Funcionalidades](#funcionalidades)
+- [Nota do Desenvolvedor](#nota-do-desenvolvedor)
+---
+
 # InsightWise - Análise de Produtividade para Aplicações Corporativas
 
 ## Integrantes:
-
 #### Breno Lemes Santiago RM: 552270
 #### Felipe Guedes Gonçalves RM: 550906
 #### Luiz Fellipe Soares de Sousa Lucena RM: 551365
@@ -24,4 +33,5 @@ A aplicação oferece uma visão clara sobre como os funcionários estão aprove
 - **Cadastro de Novos Processos**: Registro de novas funcionalidades a serem monitoradas, permitindo ao administrador realizar a captação de dados diretamente da aplicação.
 - **Guia de Como Usar**: Vídeo tutorial com um passo a passo das principais funcionalidades da plataforma.
 
+## Nota do Desenvolvedor
 Até agora, no desenvolvimento mobile, foi trabalhada a manipulação de dados do usuário, implementando funcionalidades de login e perfil, além de criar a navegação entre telas por meio de uma barra de navegação intuitiva, utilizando Activities e Fragments. As páginas restantes, como dashboard, relatório, análise individual e como usar, já foram preparadas para receber a lógica posteriormente. Essas páginas, por enquanto, possuem apenas a navegação configurada, e o restante do desenvolvimento será concluído no Sprint 4.
